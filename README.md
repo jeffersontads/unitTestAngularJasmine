@@ -1,4 +1,5 @@
-# NgTest1
+# Ambiente para desenvolvimento de testes unitários
+jasmine + angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
@@ -6,22 +7,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Run test
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm run test` para rodar no browser os testes e verificar se estão OK.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Run test com cobertura (COVERAGE)
 
-## Running unit tests
+Run `npm run test-ci` para rodar o teste com sua cobertura total conforme imagem abaixo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img src"https://i.ibb.co/93c6FVf/image-teste.png">
