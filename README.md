@@ -16,4 +16,4 @@ Run `npm run test` para rodar no browser os testes e verificar se estão OK.
 
 Run `npm run test-ci` para rodar o teste com sua cobertura total conforme imagem abaixo.
 
-<img src"https://i.ibb.co/93c6FVf/image-teste.png">
+![alt text](https://i.ibb.co/93c6FVf/image-teste.png)
