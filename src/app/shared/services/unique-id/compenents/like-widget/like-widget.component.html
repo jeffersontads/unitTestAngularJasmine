@@ -1,0 +1,32 @@
+<!-- keyup.enter =  quando usar o enter ele da o like tbm ou seja ativa o contador
+click é o evento de clique que chama a funcao -->
+
+<!-- O atributo aria-live é utilizado quando mudamos o conteúdo de algum elemento dinamicamente e queremos que o novo valor,
+seja anunciado através de screen readers. Já o atributo aria-atomic indica para o screen reader,
+se ele deve anunciar apenas o conteúdo que mudou dinamicamente de uma live area ou se deve anunciar todo o conteúdo. -->
+
+<!-- aria-describedby -> Permitir que o elemento seja descrito pelo elemento cujo o ID foi atribuído à propriedade aria-describedby. -->
+
+<div class="like-widget-container"
+(click)="like()"
+(keyup.enter)="like()"
+>
+
+  <fa-icon
+  role="button"
+  tabindex="0"
+  size="1x"
+  [icon]="fonts.faThumbsUp"
+  [attr.aria-describedby]="id"
+  >
+</fa-icon>
+<span
+class="like-counter"
+[attr.id]="id"
+[attr.aria-label]="likes + ': People liked'"
+aria-live="true"
+aria-atomic="true"
+>
+{{ likes }}
+</span>
+</div>
